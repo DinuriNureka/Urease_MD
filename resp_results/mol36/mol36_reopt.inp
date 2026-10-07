@@ -1,0 +1,14 @@
+# mol36_reopt.inp — thiourea reoptimization from planar NH2 guess (mol36_planar.xyz)
+# ORCA 6.1: DEFGRID3 replaces legacy Grid5/FinalGrid6 on the simple line
+# (ORCA 6.1 does not accept "VeryTight" on the simple line — use TightOpt + %geom.)
+# Same level as batch ligands: ωB97X-D4 / def2-SVP
+
+! wB97X-D4 def2-SVP Opt Freq TightOpt TightSCF DEFGRID3
+%maxcore 3000
+%geom
+  MaxIter 300
+end
+%pal
+  nprocs 6
+end
+* xyzfile 0 1 mol36_planar.xyz *

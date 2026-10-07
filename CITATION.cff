@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, parameters or data, please cite it as below."
+title: "Urease MD: AMBER molecular dynamics and Ni(II) parameterization pipeline for H. pylori urease inhibitor complexes"
+authors:
+  - family-names: Wimalasena
+    given-names: Dinuri
+    affiliation: "College of Chemical Sciences, Institute of Chemistry Ceylon"
+  - family-names: Perera
+    given-names: Anton S.
+    affiliation: "Case Western Reserve University"
+license: MIT
+repository-code: "https://github.com/DinuriNureka/Urease_MD"
+date-released: 2026-10-08
+keywords:
+  - urease
+  - Helicobacter pylori
+  - molecular dynamics
+  - AMBER
+  - MCPB.py
+  - RESP
+  - broken symmetry DFT
+  - nickel

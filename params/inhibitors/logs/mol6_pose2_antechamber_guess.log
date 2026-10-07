@@ -1,0 +1,6 @@
+Info: acdoctor mode is on: check and diagnose problems in the input file.
+Info: The atom type is set to gaff2; the options available to the -at flag are
+      gaff, gaff2, amber, bcc, abcg2, and sybyl.
+
+/usr/local/bin/wrapped_progs/antechamber: Fatal Error!
+Unknown input file format (xyz).

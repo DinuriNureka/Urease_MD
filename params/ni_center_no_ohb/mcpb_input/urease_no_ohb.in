@@ -1,0 +1,18 @@
+# -------------------------------------------------------
+# MCPB.py input for dinuclear Ni2+ urease active site
+# NO bridging hydroxide (OHB removed)
+# H. pylori urease (6ZJA) — one active site model
+# KCX carbamate bridge maintained between both Ni
+# -------------------------------------------------------
+original_pdb    active_site_mcpb_no_ohb.pdb
+group_name      urease_no_ohb
+cut_off         2.8
+ion_ids         68 69
+ion_mol2files   NI1.mol2 NI2.mol2
+ion_info        NI1 NI Ni 2 NI2 NI Ni 2
+naa_mol2files   KCX.mol2 NI.mol2
+frcmod_files    KCX.frcmod
+large_opt       1
+force_field     ff19SB
+water_model     tip3p
+software_version g16

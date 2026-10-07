@@ -1,0 +1,17 @@
+Info: acdoctor mode is on: check and diagnose problems in the input file.
+Info: The atom type is set to gaff2; the options available to the -at flag are
+      gaff, gaff2, amber, bcc, abcg2, and sybyl.
+
+-- Check Format for pdb File --
+   Status: pass
+Info: Determining atomic numbers from atomic symbols which are case sensitive.
+Running: /usr/local/bin/bondtype -j full -i ANTECHAMBER_BOND_TYPE.AC0 -o ANTECHAMBER_BOND_TYPE.AC -f ac
+
+Running: /usr/local/bin/atomtype -i ANTECHAMBER_AC.AC0 -o ANTECHAMBER_AC.AC -p gaff2
+
+Running: /usr/local/bin/sqm -O -i sqm.in -o sqm.out
+
+Running: /usr/local/bin/am1bcc -i ANTECHAMBER_AM1BCC_PRE.AC -o ANTECHAMBER_AM1BCC.AC -f ac -t bcc -p /usr/local/dat/antechamber/BCCPARM.DAT -s 2 -j 1
+
+Running: /usr/local/bin/atomtype -f ac -p bcc -o ANTECHAMBER_AM1BCC.AC -i ANTECHAMBER_AM1BCC_PRE.AC
+

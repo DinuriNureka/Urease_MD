@@ -1,0 +1,9 @@
+bond mol.138.NE2 mol.809.NI
+bond mol.136.NE2 mol.809.NI
+bond mol.219.OQ1 mol.809.NI
+bond mol.219.OQ2 mol.808.NI
+bond mol.248.ND1 mol.808.NI
+bond mol.274.NE2 mol.808.NI
+bond mol.362.OD1 mol.809.NI
+bond mol.808.NI mol.810.O
+bond mol.809.NI mol.810.O

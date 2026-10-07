@@ -1,0 +1,15 @@
+Remark placeholder — MCPB.py will generate actual parameters
+MASS
+
+BOND
+
+ANGL
+N -C -Y6   70.0    116.00    Carbamate N-C-O angle for KCX to MCPB Y-type
+N -C -Y1   70.0    116.00    Carbamate N-C-O angle for KCX to MCPB Y-type
+
+DIHE
+
+IMPROPER
+
+NONBON
+

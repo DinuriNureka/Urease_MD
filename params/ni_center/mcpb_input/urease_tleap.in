@@ -1,0 +1,47 @@
+source leaprc.protein.ff19SB
+source leaprc.gaff
+source leaprc.water.tip3p
+addAtomTypes {
+        { "M1"  "N" "sp3" }
+        { "M2"  "N" "sp3" }
+        { "Y1"  "O" "sp3" }
+        { "Y2"  "N" "sp3" }
+        { "Y3"  "N" "sp3" }
+        { "Y4"  "O" "sp3" }
+        { "Y5"  "N" "sp3" }
+        { "Y6"  "N" "sp3" }
+        { "Y7"  "O" "sp3" }
+        { "Y8"  "O" "sp3" }
+}
+HD1 = loadmol2 HD1.mol2
+HD2 = loadmol2 HD2.mol2
+KX1 = loadmol2 KX1.mol2
+HE1 = loadmol2 HE1.mol2
+HD3 = loadmol2 HD3.mol2
+AP1 = loadmol2 AP1.mol2
+N11 = loadmol2 N11.mol2
+N21 = loadmol2 N21.mol2
+OB1 = loadmol2 OB1.mol2
+loadamberparams KCX.frcmod
+loadamberparams OHB.frcmod
+loadamberparams frcmod.ions1lm_126_tip3p
+loadamberparams urease_mcpbpy.frcmod
+mol = loadpdb urease_mcpbpy.pdb
+bond mol.1.NE2 mol.8.NI
+bond mol.2.NE2 mol.8.NI
+bond mol.3.OQ1 mol.8.NI
+bond mol.3.OQ2 mol.7.NI
+bond mol.4.ND1 mol.7.NI
+bond mol.5.NE2 mol.7.NI
+bond mol.6.OD1 mol.8.NI
+bond mol.7.NI mol.9.O
+bond mol.8.NI mol.9.O
+savepdb mol urease_dry.pdb
+saveamberparm mol urease_dry.prmtop urease_dry.inpcrd
+solvatebox mol TIP3PBOX 10.0
+addions mol Na+ 0
+addions mol Cl- 0
+savepdb mol urease_solv.pdb
+saveamberparm mol urease_solv.prmtop urease_solv.inpcrd
+quit
+ 

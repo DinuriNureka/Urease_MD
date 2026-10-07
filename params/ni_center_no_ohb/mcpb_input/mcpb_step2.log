@@ -1,0 +1,228 @@
+******************************************************************
+*               Welcome to use the MCPB.py program               *
+*                          Version 2024                          *
+*                       Author: Pengfei Li                       *
+*                      Merz Research Group                       *
+*                   Michigan State University                    *
+*                              AND                               *
+*                 Hammes-Schiffer Research Group                 *
+*                        Yale University                         *
+*                              AND                               *
+*                       Li Research Group                        *
+*                   Loyola University Chicago                    *
+******************************************************************
+The input file you are using is : urease_no_ohb.in
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+The following is the input variable you have:
+The variable ion_ids is :  [68, 69]
+The variable ion_info is :  ['NI1', 'NI', 'Ni', 2, 'NI2', 'NI', 'Ni', 2]
+The variable ion_mol2files is :  ['NI1.mol2', 'NI2.mol2']
+The variable original_pdb is :  active_site_mcpb_no_ohb.pdb
+The variable add_bonded_pairs is :  []
+The variable add_redcrd is :  0
+The variable additional_resids is :  []
+The variable anglefc_avg is :  0
+The variable bondfc_avg is :  0
+The variable chgfix_resids is :  []
+The variable cut_off is :  2.8
+The variable force_field is :  ff19SB
+The variable frcmod_files is :  ['KCX.frcmod']
+The variable gaff is :  1
+The variable group_name is :  urease_no_ohb
+The variable ion_paraset is :  12_6 (Only for the ions using the nonbonded model).
+The variable large_opt is :  1
+The variable lgmodel_chg is :  -99
+The variable lgmodel_spin is :  -99
+             -99 means program will assign a charge automatically.
+The variable naa_mol2files is :  ['KCX.mol2', 'NI.mol2']
+The variable scale_factor is :  1.0
+             ATTENTION: This is the scale factor of frequency. The 
+             force constants will be scaled by multiplying the square
+             of scale_factor.
+The variable smmodel_chg is :  -99
+The variable smmodel_spin is :  -99
+             -99 means program will assign a charge automatically.
+The variable software_version is :  g16
+The variable sqm_opt is :  0
+The variable water_model is :  TIP3P
+The variable xstru is :  0
+******************************************************************
+*                                                                *
+*===================Generate the Initial frcmod file=============*
+*                                                                *
+******************************************************************
+Atoms which has changed the atom types: [6, 17, 29, 30, 42, 56, 64, 68, 69]
+1-HID@6-NE2 : NB --> Y4
+2-HID@17-NE2 : NB --> Y5
+3-KCX@29-OQ1 : O2 --> Y6
+3-KCX@30-OQ2 : O2 --> Y1
+4-HIE@42-ND1 : NB --> Y2
+5-HID@56-NE2 : NB --> Y3
+6-ASP@64-OD1 : O2 --> Y7
+7-NI1@68-NI : Ni --> M1
+8-NI2@69-NI : Ni --> M2
+******************************************************************
+*                                                                *
+*=========Using the Seminario method to solve the problem========*
+*                                                                *
+******************************************************************
+=======================Generate the bond parameters===============
+For bondtype: Y1-M1. There are 1 bond(s) in this type: 
+  The bond length(s) is(are): [1.9526]
+  The average bond length is: 1.9526 Angstrom.
+  The force constant(s) is(are): [2.7]
+  The average force constant is: 2.7 Kcal*mol^-1*A^-2.
+For bondtype: Y2-M1. There are 1 bond(s) in this type: 
+  The bond length(s) is(are): [1.9977]
+  The average bond length is: 1.9977 Angstrom.
+  The force constant(s) is(are): [382.8]
+  The average force constant is: 382.8 Kcal*mol^-1*A^-2.
+For bondtype: Y3-M1. There are 1 bond(s) in this type: 
+  The bond length(s) is(are): [1.986]
+  The average bond length is: 1.986 Angstrom.
+  The force constant(s) is(are): [(-0.1+0j)]
+  The average force constant is: (-0.1+0j) Kcal*mol^-1*A^-2.
+  *The average force constant is negative, treat is as 0.0.
+For bondtype: Y4-M2. There are 1 bond(s) in this type: 
+  The bond length(s) is(are): [2.0161]
+  The average bond length is: 2.0161 Angstrom.
+  The force constant(s) is(are): [0.4]
+  The average force constant is: 0.4 Kcal*mol^-1*A^-2.
+For bondtype: Y5-M2. There are 1 bond(s) in this type: 
+  The bond length(s) is(are): [1.9859]
+  The average bond length is: 1.9859 Angstrom.
+  The force constant(s) is(are): [-0.7]
+  The average force constant is: -0.7 Kcal*mol^-1*A^-2.
+  *The average force constant is negative, treat is as 0.0.
+For bondtype: Y6-M2. There are 1 bond(s) in this type: 
+  The bond length(s) is(are): [1.9942]
+  The average bond length is: 1.9942 Angstrom.
+  The force constant(s) is(are): [67.4]
+  The average force constant is: 67.4 Kcal*mol^-1*A^-2.
+For bondtype: Y7-M2. There are 1 bond(s) in this type: 
+  The bond length(s) is(are): [2.1463]
+  The average bond length is: 2.1463 Angstrom.
+  The force constant(s) is(are): [11.3]
+  The average force constant is: 11.3 Kcal*mol^-1*A^-2.
+=======================Generate the angle parameters==============
+For angletype: C -Y1-M1. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [122.82]
+  The average angle value is: 122.82 Degree.
+  The force constant(s) is(are): [0.73]
+  The average force constant is: 0.73 Kcal*mol^-1*Rad^-2.
+For angletype: C -Y6-M2. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [122.07]
+  The average angle value is: 122.07 Degree.
+  The force constant(s) is(are): [82.94]
+  The average force constant is: 82.94 Kcal*mol^-1*Rad^-2.
+For angletype: CC-Y2-M1. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [125.37]
+  The average angle value is: 125.37 Degree.
+  The force constant(s) is(are): [233.54]
+  The average force constant is: 233.54 Kcal*mol^-1*Rad^-2.
+For angletype: CO-Y7-M2. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [90.34]
+  The average angle value is: 90.34 Degree.
+  The force constant(s) is(are): [11.12]
+  The average force constant is: 11.12 Kcal*mol^-1*Rad^-2.
+For angletype: CR-Y3-M1. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [129.01]
+  The average angle value is: 129.01 Degree.
+  The force constant(s) is(are): [(-1.59-0j)]
+  The average force constant is: (-1.59+0j) Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: CR-Y4-M2. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [129.66]
+  The average angle value is: 129.66 Degree.
+  The force constant(s) is(are): [-3.55]
+  The average force constant is: -3.55 Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: CR-Y5-M2. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [126.63]
+  The average angle value is: 126.63 Degree.
+  The force constant(s) is(are): [0.48]
+  The average force constant is: 0.48 Kcal*mol^-1*Rad^-2.
+For angletype: CV-Y3-M1. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [123.89]
+  The average angle value is: 123.89 Degree.
+  The force constant(s) is(are): [(-1.59-0j)]
+  The average force constant is: (-1.59+0j) Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: CV-Y4-M2. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [123.07]
+  The average angle value is: 123.07 Degree.
+  The force constant(s) is(are): [-3.31]
+  The average force constant is: -3.31 Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: CV-Y5-M2. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [126.06]
+  The average angle value is: 126.06 Degree.
+  The force constant(s) is(are): [0.48]
+  The average force constant is: 0.48 Kcal*mol^-1*Rad^-2.
+For angletype: M1-Y2-CR. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [127.44]
+  The average angle value is: 127.44 Degree.
+  The force constant(s) is(are): [211.78]
+  The average force constant is: 211.78 Kcal*mol^-1*Rad^-2.
+For angletype: Y1-M1-Y2. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [100.53]
+  The average angle value is: 100.53 Degree.
+  The force constant(s) is(are): [-8.0]
+  The average force constant is: -8.0 Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: Y1-M1-Y3. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [104.75]
+  The average angle value is: 104.75 Degree.
+  The force constant(s) is(are): [(-0.94-0j)]
+  The average force constant is: (-0.94+0j) Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: Y2-M1-Y3. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [103.01]
+  The average angle value is: 103.01 Degree.
+  The force constant(s) is(are): [(-1.97-0j)]
+  The average force constant is: (-1.97+0j) Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: Y4-M2-Y5. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [102.3]
+  The average angle value is: 102.3 Degree.
+  The force constant(s) is(are): [0.74]
+  The average force constant is: 0.74 Kcal*mol^-1*Rad^-2.
+For angletype: Y4-M2-Y6. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [100.82]
+  The average angle value is: 100.82 Degree.
+  The force constant(s) is(are): [-2.62]
+  The average force constant is: -2.62 Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: Y4-M2-Y7. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [91.26]
+  The average angle value is: 91.26 Degree.
+  The force constant(s) is(are): [-1.79]
+  The average force constant is: -1.79 Kcal*mol^-1*Rad^-2.
+  *The average force constant is negative, treat is as 0.00.
+For angletype: Y5-M2-Y6. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [96.32]
+  The average angle value is: 96.32 Degree.
+  The force constant(s) is(are): [1.37]
+  The average force constant is: 1.37 Kcal*mol^-1*Rad^-2.
+For angletype: Y5-M2-Y7. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [98.73]
+  The average angle value is: 98.73 Degree.
+  The force constant(s) is(are): [0.56]
+  The average force constant is: 0.56 Kcal*mol^-1*Rad^-2.
+For angletype: Y6-M2-Y7. There are 1 angle(s) in this type: 
+  The angle value(s) is(are): [158.22]
+  The average angle value is: 158.22 Degree.
+  The force constant(s) is(are): [18.18]
+  The average force constant is: 18.18 Kcal*mol^-1*Rad^-2.
+==================================================================
+To cite the Seminario method please use the following reference:
+  J. M. Seminario, Int. J. Quantum Chem., 1996, 30, 1271-1277.
+==================================================================
+To cite MCPB.py please use the following reference:
+  Pengfei Li and Kenneth M. Merz, Jr., "MCPB.py: A Python Based
+  Metal Center Parameter Builder", J. Chem. Inf. Model., 2016,
+  56, 599-604.
+Helpful tips can be found in the following book chapter:
+  Pengfei Li and Kenneth M. Merz, Jr., "Parameterization of a Dioxygen
+  Binding Metal Site Using the MCPB.py Program", Methods Mol. Biol.,
+  2021, 2199, 257-275.

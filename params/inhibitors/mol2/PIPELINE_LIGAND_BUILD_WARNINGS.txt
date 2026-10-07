@@ -1,0 +1,1 @@
+mol21 (mol15): graph mismatch — used geometry-mapped RESP onto mol21_pose2_gaff2.mol2 (mean d=1.484 Å, max=5.256 Å; RESP from gas-phase mol15.mol2).

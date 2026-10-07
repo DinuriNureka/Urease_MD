@@ -1,0 +1,6 @@
+! wB97X-D4 def2-SVP Opt Freq
+%maxcore 3000
+%pal
+  nprocs 6
+end
+* xyzfile __CHARGE__ __MULT__ input.xyz *

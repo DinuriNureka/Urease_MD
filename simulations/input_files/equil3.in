@@ -1,0 +1,19 @@
+Equil3: 200 ps NPT, Bussi + MC barostat, light restraints (wt=0.1)
+ &cntrl
+  imin=0, irest=1, ntx=5,
+  nstlim=100000, dt=0.002,
+  ntc=2, ntf=2,
+  ntb=2, ntp=1,
+  barostat=2, mcbarint=25, pres0=1.0,
+  ntt=11, tautp=2.0, temp0=300.0,
+  cut=9.0,
+  ntr=1,
+  restraintmask='(@CA,C,N,O&!:WAT,Na+,Cl-)|(:NI,KCX&!@H=)',
+  restraint_wt=0.1,
+  ntpr=500, ntwx=500, ntwr=10000,
+  ioutfm=1, ntxo=2,
+  ig=-1,
+  nmropt=1,
+ /
+&wt type='END' /
+DISANG=/path/to/urease_md/ni_ni.RST

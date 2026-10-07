@@ -1,0 +1,13 @@
+! wB97X-D4 def2-SVP def2/J RIJCOSX TightSCF CHELPG
+%maxcore 3500
+%pal nprocs 8 end
+%elprop
+  Dipole true
+  Quadrupole true
+end
+%output
+  PrintLevel 3
+  Print[P_Hirshfeld] 1
+  Print[P_Mulliken] 1
+end
+* xyzfile 0 1 mol18.xyz

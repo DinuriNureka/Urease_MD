@@ -1,0 +1,9 @@
+# Residue numbers are tleap sequence IDs for monomer_BQ_apo.pdb (chain Q then B);
+# Ni sites are 1046/1047; bridging hydroxide 1048 removed for no-OHB model.
+bond mol.376.NE2 mol.1047@NI
+bond mol.374.NE2 mol.1047@NI
+bond mol.457.OQ1 mol.1047@NI
+bond mol.457.OQ2 mol.1046@NI
+bond mol.486.ND1 mol.1046@NI
+bond mol.512.NE2 mol.1046@NI
+bond mol.600.OD1 mol.1047@NI

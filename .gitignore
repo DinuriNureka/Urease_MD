@@ -1,0 +1,80 @@
+# Simulation outputs (large / regenerated; keep input files)
+simulations/**/*.nc
+simulations/**/*.rst7
+simulations/**/*.mdcrd
+simulations/**/*.out
+simulations/**/*.mdinfo
+# Amber run metadata (literally named "mdinfo", no extension) under simulations only
+simulations/**/mdinfo
+
+# Full-pipeline run logs (timestamped, contain large refs)
+simulations/full_pipeline_*/
+simulations/md_output/
+simulations/ni_restraint_pipeline_*/
+simulations/ni_site_qc_*/
+simulations/mol*_full_*/
+
+# Individual mol simulation directories (contain large binary outputs)
+simulations/mol*/
+simulations/aha*/
+simulations/dmj*/
+simulations/thiourea*/
+
+# Archive directory (binary/large files)
+archive/
+
+# Pipeline symlink directories (runtime only)
+r/
+m/
+
+# tLeap generated log at project root
+leap.log
+
+# Run logs
+logs/**/*.log
+logs/*.log
+
+# Archives
+*.bz2
+*.tar
+
+# Forensic crash artifacts (trajectory-scale; GitHub 100 MB limit)
+forensic_reports/**/box_dims.dat
+forensic_reports/**/equil_free.nc_crashed
+forensic_reports/**/equil_free.nc_crashed_run2
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ORCA / QM scratch (can exceed GitHub 100 MiB file limit)
+**/*SCFUE.tmp.*
+**/*SCFVE.tmp.*
+**/esp.diisao.tmp.*
+params/ni_center/multiframe_resp/xtb_md/xtb_md.scf.log
+systems/**/*.prmtop
+systems/**/*.parm7
+systems/**/*.inpcrd
+systems/**/*.crd
+
+# Local run clutter
+*.pid
+*_pid.txt
+scripts/*.log
+*.bak_*
+*.backup*
+fort.*
+/mdcrd
+/mdinfo
+/logfile
+/sqm.*
+
+# Local shortcut symlinks to lab storage
+/m/
+/md/
+/p/
+/parm/
+/rs/
+/nmr_disang/
+.cursorrules

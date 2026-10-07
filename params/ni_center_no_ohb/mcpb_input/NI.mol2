@@ -1,0 +1,9 @@
+@<TRIPOS>MOLECULE
+NI
+ 1 0 0 0 0
+SMALL
+GASTEIGER
+
+@<TRIPOS>ATOM
+      1 NI        0.0000    0.0000    0.0000 Ni      1  NI         2.0000
+@<TRIPOS>BOND

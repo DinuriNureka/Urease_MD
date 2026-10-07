@@ -1,0 +1,11 @@
+@<TRIPOS>MOLECULE
+OHB
+ 2 1 0 0 0
+SMALL
+GASTEIGER
+
+@<TRIPOS>ATOM
+      1 O          225.1870   244.9990   196.8150 O           1 OHB       -0.649895
+      2 H          224.6180   245.2000   197.5620 H           1 OHB        0.325479
+@<TRIPOS>BOND
+     1     1     2    1

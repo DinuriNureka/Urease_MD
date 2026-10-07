@@ -1,0 +1,4 @@
+rmse_au=0.001316
+rmse_charge_e=0.001316
+rrmse=0.104883
+parse_charges=OK

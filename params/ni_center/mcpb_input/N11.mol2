@@ -1,0 +1,12 @@
+@<TRIPOS>MOLECULE
+N11
+    1     0     1     0     0
+SMALL
+RESP Charge
+ 
+ 
+@<TRIPOS>ATOM
+      1 NI        226.5580  246.3650  197.4910 M1        1 N11     -0.219594
+@<TRIPOS>BOND
+@<TRIPOS>SUBSTRUCTURE
+     1 N11         1 TEMP              0 ****  ****    0 ROOT

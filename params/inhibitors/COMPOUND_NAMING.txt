@@ -1,0 +1,24 @@
+Compound naming (canonical vs pipeline IDs)
+============================================
+
+Chemistry / literature labels (use these in text and tables):
+  - Numbered series: mol1, mol2, … mol33  (33 structures)
+  - Named: AHA (aha), DMJ (dmj), thiourea (thiourea)
+  Total: 33 + 3 = 36 inhibitors.
+
+Pipeline batch IDs (file-system order under params/inhibitors/orca_opt/):
+  - mol01, mol02, … mol36 — sequential folders for ORCA/RESP/MD automation.
+  - These are NOT the same as “mol1”…“mol33”: e.g. mol13 in batch maps to compound mol1
+    (see ligand_name_mapping.csv: mol_id vs compound).
+
+Authoritative map: ligand_name_mapping.csv
+  - mol_id     = batch folder (mol01…mol36)
+  - compound   = canonical inhibitor tag (mol1…mol33, aha, dmj, thiourea)
+  - workdir    = params/inhibitors/orca_opt/<mol_id>
+
+When running MD batches by name, use compound order:
+  mol1, mol2, … mol33 (numeric), then aha, dmj, thiourea.
+  Do not order by mol01…mol36 folder index.
+
+Example (scripts/run_batch_5.sh): canonical mol1, mol13, mol14, mol19, mol33 — sorted by
+  compound number (1 < 13 < 14 < 19 < 33). mol1 here is the numbered series mol1, not AHA (mol01 batch).

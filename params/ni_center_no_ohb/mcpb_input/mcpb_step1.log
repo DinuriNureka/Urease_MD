@@ -1,0 +1,121 @@
+******************************************************************
+*               Welcome to use the MCPB.py program               *
+*                          Version 2024                          *
+*                       Author: Pengfei Li                       *
+*                      Merz Research Group                       *
+*                   Michigan State University                    *
+*                              AND                               *
+*                 Hammes-Schiffer Research Group                 *
+*                        Yale University                         *
+*                              AND                               *
+*                       Li Research Group                        *
+*                   Loyola University Chicago                    *
+******************************************************************
+The input file you are using is : urease_no_ohb.in
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+The following is the input variable you have:
+The variable ion_ids is :  [68, 69]
+The variable ion_info is :  ['NI1', 'NI', 'Ni', 2, 'NI2', 'NI', 'Ni', 2]
+The variable ion_mol2files is :  ['NI1.mol2', 'NI2.mol2']
+The variable original_pdb is :  active_site_mcpb_no_ohb.pdb
+The variable add_bonded_pairs is :  []
+The variable add_redcrd is :  0
+The variable additional_resids is :  []
+The variable anglefc_avg is :  0
+The variable bondfc_avg is :  0
+The variable chgfix_resids is :  []
+The variable cut_off is :  2.8
+The variable force_field is :  ff19SB
+The variable frcmod_files is :  ['KCX.frcmod']
+The variable gaff is :  1
+The variable group_name is :  urease_no_ohb
+The variable ion_paraset is :  12_6 (Only for the ions using the nonbonded model).
+The variable large_opt is :  1
+The variable lgmodel_chg is :  -99
+The variable lgmodel_spin is :  -99
+             -99 means program will assign a charge automatically.
+The variable naa_mol2files is :  ['KCX.mol2', 'NI.mol2']
+The variable scale_factor is :  1.0
+             ATTENTION: This is the scale factor of frequency. The 
+             force constants will be scaled by multiplying the square
+             of scale_factor.
+The variable smmodel_chg is :  -99
+The variable smmodel_spin is :  -99
+             -99 means program will assign a charge automatically.
+The variable software_version is :  g16
+The variable sqm_opt is :  0
+The variable water_model is :  TIP3P
+The variable xstru is :  0
+******************************************************************
+*                                                                *
+*=======================Metal Site Information===================*
+*                                                                *
+******************************************************************
+***Selected Metal ion NI is atom 68 in residue 7-NI1
+***Selected Metal ion NI is atom 69 in residue 8-NI2
+3-KCX@OQ2 is in 2.8 Angstrom of or set bonded (in the input file) to (one of) these metal ions
+4-HIE@ND1 is in 2.8 Angstrom of or set bonded (in the input file) to (one of) these metal ions
+5-HID@NE2 is in 2.8 Angstrom of or set bonded (in the input file) to (one of) these metal ions
+1-HID@NE2 is in 2.8 Angstrom of or set bonded (in the input file) to (one of) these metal ions
+2-HID@NE2 is in 2.8 Angstrom of or set bonded (in the input file) to (one of) these metal ions
+3-KCX@OQ1 is in 2.8 Angstrom of or set bonded (in the input file) to (one of) these metal ions
+6-ASP@OD1 is in 2.8 Angstrom of or set bonded (in the input file) to (one of) these metal ions
+***The following residues are in the Metal Site:
+Residue 1-HID
+Residue 2-HID
+Residue 3-KCX
+Residue 4-HIE
+Residue 5-HID
+Residue 6-ASP
+Residue 7-NI1
+Residue 8-NI2
+***The small model contains the following residues: 
+[1, 2, 3, 4, 5, 6, 7, 8]
+***The large model contains the following residues: 
+[1, 2, 3, 4, 5, 6, 7, 8]
+******************************************************************
+*                                                                *
+*=======================Building models==========================*
+*                                                                *
+******************************************************************
+***Creating the small model...
+It contains the residue 1-HID as normal.
+It contains the residue 2-HID as normal.
+It contains the residue 3-KCX as normal.
+It contains the residue 4-HIE as normal.
+It contains the residue 5-HID as normal.
+It contains the residue 6-ASP as normal.
+It contains the residue 7-NI1 as normal.
+It contains the residue 8-NI2 as normal.
+Totally there are 69 atoms in the small model.
+Totally there are 276 electrons in the small model.
+***Creating the standard model...
+It contains the residue 1-HID as normal.
+It contains the residue 2-HID as normal.
+It contains the residue 3-KCX as normal.
+It contains the residue 4-HIE as normal.
+It contains the residue 5-HID as normal.
+It contains the residue 6-ASP as normal.
+It contains the residue 7-NI1 as normal.
+It contains the residue 8-NI2 as normal.
+Totally there are 69 atoms in the standard model.
+***Creating the large model...
+It contains the residue 1-HID as normal.
+It contains the residue 2-HID as normal.
+It contains the residue 3-KCX as normal.
+It contains the residue 4-HIE as normal.
+It contains the residue 5-HID as normal.
+It contains the residue 6-ASP as normal.
+It contains the residue 7-NI1 as normal.
+It contains the residue 8-NI2 as normal.
+Totally there are 69 atoms in the large model.
+Totally there are 276 electrons in the large model.
+==================================================================
+To cite MCPB.py please use the following reference:
+  Pengfei Li and Kenneth M. Merz, Jr., "MCPB.py: A Python Based
+  Metal Center Parameter Builder", J. Chem. Inf. Model., 2016,
+  56, 599-604.
+Helpful tips can be found in the following book chapter:
+  Pengfei Li and Kenneth M. Merz, Jr., "Parameterization of a Dioxygen
+  Binding Metal Site Using the MCPB.py Program", Methods Mol. Biol.,
+  2021, 2199, 257-275.

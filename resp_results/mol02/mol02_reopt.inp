@@ -1,0 +1,12 @@
+# mol02_reopt.inp — tighter Opt/SCF/grid reoptimization + frequency (mol02 only)
+# Level: ωB97X-D4 / def2-SVP (same as batch ligand jobs)
+# ORCA 6.1: "Grid5" / "FinalGrid6" are not valid on the simple line; use DEFGRID3 for a
+#           denser DFT integration grid (manual § numerical integration).
+# Starting geometry: mol02.xyz in this directory (synced from params before run)
+
+! wB97X-D4 def2-SVP Opt Freq TightOpt TightSCF DEFGRID3
+%maxcore 3000
+%pal
+  nprocs 6
+end
+* xyzfile 0 1 mol02.xyz *

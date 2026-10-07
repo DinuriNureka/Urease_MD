@@ -1,0 +1,11 @@
+# Residue numbers are tleap sequence IDs for monomer_BQ_apo.pdb (chain Q then B);
+# Ni/OHB are 1046/1047/1048 here, not PDB 9685/9686/9801 (see tleap desc).
+bond mol.376.NE2 mol.1047@NI
+bond mol.374.NE2 mol.1047@NI
+bond mol.457.OQ1 mol.1047@NI
+bond mol.457.OQ2 mol.1046@NI
+bond mol.486.ND1 mol.1046@NI
+bond mol.512.NE2 mol.1046@NI
+bond mol.600.OD1 mol.1047@NI
+bond mol.1046@NI mol.1048@O
+bond mol.1047@NI mol.1048@O

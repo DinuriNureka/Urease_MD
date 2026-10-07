@@ -1,0 +1,19 @@
+Production test: 10 ns NPT, dt=0.002, NO HMR, no segments
+ &cntrl
+  imin=0, irest=1, ntx=5,
+  nstlim=5000000, dt=0.002,
+  ntc=2, ntf=2,
+  ntb=2, ntp=1,
+ barostat=2, mcbarint=25, pres0=1.0,
+  ntt=11, tautp=2.0, temp0=300.0,
+  cut=9.0,
+  fswitch=8.0,
+  ntr=0,
+  ntpr=5000, ntwx=5000, ntwe=5000, ntwr=5000,
+  iwrap=1,
+  ioutfm=1, ntxo=2,
+  ig=-1,
+  nmropt=1,
+ /
+&wt type='END' /
+DISANG=/path/to/urease_md/ni_ni.RST

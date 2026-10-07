@@ -1,0 +1,24 @@
+# -------------------------------------------------------
+# MCPB.py input for dinuclear Ni2+ urease active site
+# H. pylori urease (6ZJA) — one active site model
+#
+# NOTES:
+#   - Two metal ions (NI1=atom68, NI2=atom69) -> list both in ion_ids
+#   - force_field ff19SB -> current AMBER standard
+#   - software_version g16 -> we convert to ORCA manually
+#     (ORCA native interface is not fully validated)
+#   - cut_off 2.8 captures all Ni-ligand bonds (2.05-2.49 A)
+# -------------------------------------------------------
+
+original_pdb    active_site_mcpb.pdb
+group_name      urease
+cut_off         2.8
+ion_ids         68 69
+ion_mol2files   NI1.mol2 NI2.mol2
+ion_info        NI1 NI Ni 2 NI2 NI Ni 2
+naa_mol2files   KCX.mol2 OHB.mol2 NI.mol2
+frcmod_files    KCX.frcmod OHB.frcmod
+large_opt       1
+force_field     ff19SB
+water_model     tip3p
+software_version g16
