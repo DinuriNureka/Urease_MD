@@ -29,13 +29,15 @@ This work was carried out as an undergraduate research project at the College of
 RESP_PIPELINE.md            Ligand RESP workflow with ORCA and Multiwfn
 config.env                  Central configuration (software paths, run settings)
 scripts/                    Bash and Python scripts for every phase
+scripts/resp/               Ligand RESP charge scripts
+analysis/                   MM/PBSA and Ni to Ni distance analysis
 params/                     Ni center and inhibitor parameters
 gaff2_params/               GAFF2 parameters for the inhibitors
 resp_inputs/, resp_results/ Ligand RESP inputs and fitted charges
-structures/                 Raw, cleaned and prepared protein structures
+structures/                 Raw, cleaned and prepared protein structures, plus PDBs for visualization
 simulations/input_files/    AMBER input files for each MD stage
 rst/                        Ni to Ni distance restraint files
-docs/                       Dated notes on individual runs and fixes
+docs/                       Project overview and dated notes on individual runs and fixes
 ```
 
 ## Getting started

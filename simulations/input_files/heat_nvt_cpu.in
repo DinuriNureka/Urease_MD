@@ -16,4 +16,4 @@ Short CPU NVT warmup (1 ps), Bussi thermostat, active-site restrained
   nmropt=1,
  /
 &wt type='END' /
-DISANG=/path/to/urease_md/ni_ni.RST
+DISANG=/path/to/urease_md/rst/ni_ni.RST

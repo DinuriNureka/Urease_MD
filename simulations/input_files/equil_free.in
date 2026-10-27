@@ -13,4 +13,4 @@ Equil segment: 10 ns NPT with HMR (dt=0.004)
   nmropt=1,
  /
  &wt type='END' /
-DISANG=/path/to/urease_md/ni_ni.RST
+DISANG=/path/to/urease_md/rst/ni_ni.RST

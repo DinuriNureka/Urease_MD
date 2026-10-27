@@ -16,4 +16,4 @@ Equil1: 200 ps NPT, Bussi + MC barostat, strong restraints (wt=10)
   nmropt=1,
  /
 &wt type='END' /
-DISANG=/path/to/urease_md/ni_ni.RST
+DISANG=/path/to/urease_md/rst/ni_ni.RST

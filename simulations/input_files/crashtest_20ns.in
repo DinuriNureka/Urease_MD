@@ -12,4 +12,4 @@ ABS crash test: 20 ns NPT MC barostat mcbarint=100
   nmropt=1,
  /
  &wt type='END' /
-DISANG=/path/to/urease_md/ni_ni.RST
+DISANG=/path/to/urease_md/rst/ni_ni.RST

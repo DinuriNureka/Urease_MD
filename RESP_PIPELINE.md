@@ -16,10 +16,10 @@ Before:
 
 ```text
 /path/to/data/free_ligands/   # input XYZ files (read-only)
-prepare_resp_inputs.py
-run_resp_batch.sh
-check_resp_rmsd.py
-run_antechamber_resp.sh
+scripts/resp/prepare_resp_inputs.py
+scripts/resp/run_resp_batch.sh
+scripts/resp/check_resp_rmsd.py
+scripts/resp/run_antechamber_resp.sh
 RESP_PIPELINE.md
 ```
 
@@ -49,10 +49,10 @@ gaff2_params/
 Run these commands in order from project root:
 
 ```bash
-python3 prepare_resp_inputs.py --xyz_dir /path/to/data/free_ligands
-bash run_resp_batch.sh
-python3 check_resp_rmsd.py
-bash run_antechamber_resp.sh
+python3 scripts/resp/prepare_resp_inputs.py --xyz_dir /path/to/data/free_ligands
+bash scripts/resp/run_resp_batch.sh
+python3 scripts/resp/check_resp_rmsd.py
+bash scripts/resp/run_antechamber_resp.sh
 ```
 
 ## Interpreting RMSD results
@@ -96,7 +96,7 @@ After `run_antechamber_resp.sh` has produced `gaff2_params/molNN/molNN.mol2` (pa
 **Command (from project root):**
 
 ```bash
-python3 calc_esp_rmse.py --results_dir resp_results --params_dir gaff2_params \
+python3 scripts/resp/calc_esp_rmse.py --results_dir resp_results --params_dir gaff2_params \
   --manifest resp_inputs/job_manifest.csv --out_csv resp_results/esp_rmse_report.csv
 ```
 

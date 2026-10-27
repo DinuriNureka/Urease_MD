@@ -18,4 +18,4 @@ Heating 50 -> 300 K over 100 ps, Bussi thermostat (ntt=11), backbone + active si
 &wt type='TEMP0', istep1=0, istep2=40000, value1=50.0, value2=300.0 /
 &wt type='TEMP0', istep1=40001, istep2=50000, value1=300.0, value2=300.0 /
 &wt type='END' /
-DISANG=/path/to/urease_md/ni_ni.RST
+DISANG=/path/to/urease_md/rst/ni_ni.RST

@@ -10,7 +10,7 @@ The script `scripts/extract_visualization_files.py` generates all three and copi
 `/mnt/user-data/outputs/` for download when that path exists and is writable.
 
 If that directory is unavailable (typical on a bare-metal workstation), the script copies the same PDBs to
-`--workdir/visualization_download/` instead and prints a short note.
+`--workdir/structures/visualization/` instead and prints a short note.
 
 ## Requirements
 

@@ -16,4 +16,4 @@ Production test: 10 ns NPT, dt=0.001, NO HMR, no segments
   nmropt=1,
  /
 &wt type='END' /
-DISANG=/path/to/urease_md/ni_ni.RST
+DISANG=/path/to/urease_md/rst/ni_ni.RST

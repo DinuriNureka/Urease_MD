@@ -16,4 +16,4 @@ Short CPU NPT density warmup (100 ps), Bussi + MC barostat, active site restrain
   nmropt=1,
  /
 &wt type='END' /
-DISANG=/path/to/urease_md/ni_ni.RST
+DISANG=/path/to/urease_md/rst/ni_ni.RST
